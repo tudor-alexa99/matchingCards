@@ -14,6 +14,10 @@
 		7EF9B5DF2AA0F6B80032FD7F /* MatchingCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5DE2AA0F6B80032FD7F /* MatchingCardsTests.swift */; };
 		7EF9B5E92AA0F6B80032FD7F /* MatchingCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5E82AA0F6B80032FD7F /* MatchingCardsUITests.swift */; };
 		7EF9B5EB2AA0F6B80032FD7F /* MatchingCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5EA2AA0F6B80032FD7F /* MatchingCardsUITestsLaunchTests.swift */; };
+		7EF9B5FA2AA1021E0032FD7F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5F92AA1021E0032FD7F /* Card.swift */; };
+		7EF9B5FC2AA1052A0032FD7F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5FB2AA1052A0032FD7F /* CardView.swift */; };
+		7EF9B5FE2AA105800032FD7F /* CardBackSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B5FD2AA105800032FD7F /* CardBackSide.swift */; };
+		7EF9B6012AA10B7B0032FD7F /* CardFrontSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF9B6002AA10B7B0032FD7F /* CardFrontSide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		7EF9B5E42AA0F6B80032FD7F /* MatchingCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchingCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF9B5E82AA0F6B80032FD7F /* MatchingCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingCardsUITests.swift; sourceTree = "<group>"; };
 		7EF9B5EA2AA0F6B80032FD7F /* MatchingCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EF9B5F92AA1021E0032FD7F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7EF9B5FB2AA1052A0032FD7F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7EF9B5FD2AA105800032FD7F /* CardBackSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackSide.swift; sourceTree = "<group>"; };
+		7EF9B6002AA10B7B0032FD7F /* CardFrontSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontSide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		7EF9B5CC2AA0F6B30032FD7F /* MatchingCards */ = {
 			isa = PBXGroup;
 			children = (
+				7EF9B5F82AA102010032FD7F /* Models */,
+				7EF9B5F72AA101FB0032FD7F /* Views */,
 				7EF9B5CD2AA0F6B30032FD7F /* MatchingCardsApp.swift */,
-				7EF9B5CF2AA0F6B30032FD7F /* ContentView.swift */,
 				7EF9B5D12AA0F6B70032FD7F /* Assets.xcassets */,
 				7EF9B5D32AA0F6B70032FD7F /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				7EF9B5EA2AA0F6B80032FD7F /* MatchingCardsUITestsLaunchTests.swift */,
 			);
 			path = MatchingCardsUITests;
+			sourceTree = "<group>";
+		};
+		7EF9B5F72AA101FB0032FD7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EF9B5CF2AA0F6B30032FD7F /* ContentView.swift */,
+				7EF9B5FB2AA1052A0032FD7F /* CardView.swift */,
+				7EF9B5FD2AA105800032FD7F /* CardBackSide.swift */,
+				7EF9B6002AA10B7B0032FD7F /* CardFrontSide.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7EF9B5F82AA102010032FD7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EF9B5F92AA1021E0032FD7F /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF9B5D02AA0F6B30032FD7F /* ContentView.swift in Sources */,
+				7EF9B5FE2AA105800032FD7F /* CardBackSide.swift in Sources */,
+				7EF9B5FA2AA1021E0032FD7F /* Card.swift in Sources */,
+				7EF9B5FC2AA1052A0032FD7F /* CardView.swift in Sources */,
+				7EF9B6012AA10B7B0032FD7F /* CardFrontSide.swift in Sources */,
 				7EF9B5CE2AA0F6B30032FD7F /* MatchingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

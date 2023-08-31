@@ -10,10 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                CardView(isFaceUp: true)
+                CardView(isFaceUp: false)
+                CardView(isFaceUp: true)
+            }
+            HStack {
+                CardView(isFaceUp: false)
+                CardView(isFaceUp: true)
+                CardView(isFaceUp: false)
+            }
         }
         .padding()
     }
